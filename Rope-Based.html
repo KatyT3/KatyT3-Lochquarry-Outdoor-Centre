@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Rope-Based Activities</title>
+    <style>
+        /* Menu & Logo*/
+        header {
+            position: relative;
+            top: 0;
+            left: 0;
+            width: calc(100% - 6%);
+
+            background-color: white;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 8px 3%;
+
+            z-index: 100;
+        }
+
+        .menu {
+            display: flex;
+            align-items: center;
+        }
+
+        .menu ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+
+        }
+
+        .menu ul li {
+            margin-left: 20px;
+
+        }
+
+        .menu ul a {
+            text-transform: capitalize;
+            color: black;
+            text-decoration: none;
+            position: relative;
+        }
+
+        .menu ul a::after {
+            position: absolute;
+            left: 0;
+            bottom: -6px;
+            content: "";
+            width: 100%;
+            height: 2px;
+            background-color: #bee5a9;
+            transition: 0.1s ease-out;
+        }
+
+        .logo {
+            width: 20%;
+
+            margin-top: 0%;
+        }
+
+        /* BODY */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+        section {
+            display: flex;
+            align-items: center;
+            width: 94%;
+            margin: 30px 3%;
+
+        }
+
+        section div {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-top-left-radius: 15px;
+            border-bottom-left-radius: 15px;
+            border-top-right-radius: 15px;
+            border-bottom-right-radius: 15px;
+        }
+
+        .section__1 img {
+            height: 100%;
+            width: 100%;
+            object-fit: cover;
+            border-top-right-radius: 15px;
+            border-bottom-right-radius: 15px;
+        }
+
+        .section__2 img {
+            height: 100%;
+            width: 100%;
+            object-fit: cover;
+            border-top-left-radius: 15px;
+            border-bottom-left-radius: 15px;
+        }
+
+        .section__3 img {
+            height: 100%;
+            width: 100%;
+            object-fit: cover;
+            border-top-right-radius: 15px;
+            border-bottom-right-radius: 15px;
+        }
+
+        .section__4 img {
+            height: 100%;
+            width: 100%;
+            object-fit: cover;
+            border-top-left-radius: 15px;
+            border-bottom-left-radius: 15px;
+        }
+
+        .section__5 img {
+            height: 100%;
+            width: 100%;
+            object-fit: cover;
+            border-top-right-radius: 15px;
+            border-bottom-right-radius: 15px;
+        }
+
+        .section__0 .div0 {
+            display: flex;
+            align-items: center;
+            height: 100%;
+            width: 100%;
+        }
+
+        .div0 h1 {
+            color: rgb(171, 180, 245);
+            font-size: 30px;
+        }
+
+        section .div1,
+        section .div2,
+        section .div3,
+        section .div4,
+        section .div5 {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            height: 100%;
+            width: 50%;
+        }
+
+        section h1 {
+            font-size: 25px;
+            text-align: center;
+            letter-spacing: 2px;
+            color: #161817;
+
+        }
+
+        section h2 {
+            font-size: 16px;
+            text-align: center;
+            letter-spacing: 1px;
+            padding: 10px 50px;
+            background-color: rgb(243, 238, 238);
+            width: 100%;
+        }
+
+        section p {
+            font-size: 20px;
+            text-align: center;
+            padding: 10px 50px;
+            letter-spacing: 1px;
+            margin: 0;
+        }
+
+        .section__0 {
+            background-color: rgb(243, 238, 238);
+            border-top-left-radius: 15px;
+            border-bottom-left-radius: 15px;
+            border-top-right-radius: 15px;
+            border-bottom-right-radius: 15px;
+        }
+
+        .section__1 {
+            background-color: rgb(245, 200, 200);
+            border-top-left-radius: 15px;
+            border-bottom-left-radius: 15px;
+            border-top-right-radius: 15px;
+            border-bottom-right-radius: 15px;
+        }
+
+        .section__2 {
+            background-color: rgb(167, 202, 241);
+            border-top-left-radius: 15px;
+            border-bottom-left-radius: 15px;
+            border-top-right-radius: 15px;
+            border-bottom-right-radius: 15px;
+        }
+
+        .section__3 {
+            background-color: rgb(200, 245, 200);
+            border-top-left-radius: 15px;
+            border-bottom-left-radius: 15px;
+            border-top-right-radius: 15px;
+            border-bottom-right-radius: 15px;
+        }
+
+        .section__4 {
+            background-color: rgb(200, 200, 245);
+            border-top-left-radius: 15px;
+            border-bottom-left-radius: 15px;
+            border-top-right-radius: 15px;
+            border-bottom-right-radius: 15px;
+        }
+
+        .section__5 {
+            background-color: rgb(243, 238, 238);
+            border-top-left-radius: 15px;
+            border-bottom-left-radius: 15px;
+            border-top-right-radius: 15px;
+            border-bottom-right-radius: 15px;
+        }
+
+        .contact-text {
+            font-size: 14px;
+            text-align: left;
+            padding: 10px 0;
+            margin: 0;
+
+        }
+
+        .contact-link {
+            font-weight: bold;
+            color: #000;
+
+        }
+
+        .customer-review img {
+            height: 20%;
+            width: 20%;
+            object-fit: cover;
+        }
+
+        .customer-review__container {
+            display: auto;
+            align-items: auto;
+            text-align: lauto;
+            width: 85%;
+            margin: 30px 3%;
+            align-items: auto;
+            background-color: rgb(237, 154, 103);
+            padding: 40px 40px;
+        }
+
+        .banner {
+            position: relative;
+            height: 100px;
+            background-image: url('Banner4.png');
+            background-size: cover;
+            background-position: center;
+            display: flex;
+            align-items: center;
+            justify-content: flex-end;
+
+            color: rgb(108, 121, 219);
+            text-align: center;
+            font-size: 24px;
+            font-weight: bold;
+            padding-right: 20px;
+
+        }
+
+        /* Footer*/
+        footer {
+            background-color: #A0D689;
+            color: black;
+            margin-top: 20px;
+            padding: 25px 10%;
+        }
+
+        footer p {
+            font-size: 15px;
+        }
+
+        .icons_social {
+            margin: 25px 0;
+        }
+
+        .icons_social i {
+            margin-right: 20px;
+            font-size: 20px;
+        }
+
+        footer img {
+            margin-top: 20px;
+            border: 1px solid #fff;
+            height: 50px;
+            cursor: pointer;
+        }
+
+        footer img:last-child {
+            margin-left: 10px;
+        }
+    </style>
+</head>
+
+<!-- Menu -->
+<header>
+    <div class="menu">
+        <ul>
+            <li><a href="Home.html">Home</a></li>
+            <li><a href="Land-Based.html">Land</a></li>
+            <li><a href="Water-Based.html">Water</a></li>
+            <li><a href="Rope-Based.html">Rope</a></li>
+            <li><a href="About-Us.html">About Us</a></li>
+            <li><a href="Contact-Us.html">Contact Us</a></li>
+        </ul>
+    </div>
+    <img src="Images/Logo1.png" class="logo" alt="Logo">
+</header>
+
+    <body>
+</header>
+<!-- Banner -->
+<div class="banner">
+</div>
+
+
+<!--section 0-->
+<section class="section__0">
+    <div class="div0">
+        <div>
+            <h1>ROPE BASED ACTIVITIES</h1>
+        </div>
+</section>
+
+<!--section 1-->
+<section class="section__1">
+    <div class="div1">
+        <h1>Climbing<br>Activity</h1>
+        <p>Scale the highs of one of the local quarry slabs.
+            Max group size 8. Ages 8+</p>
+    </div>
+    <div class="div2">
+        <img src="Images/Climbing.png" alt="Test Image">
+    </div>
+</section>
+
+<!--section 2-->
+<section class="section__2">
+    <div class="div1">
+        <img src="Images/Abseiling.png" alt="Test Image">
+    </div>
+    <div class="div2">
+        <h1>Abseiling<br>Activity</h1>
+        <p>Take the scary step and abseil from the top of one of the local quarry slabs. There is a lovely view...
+            if you are brave enough to look down!
+            Max group size 8. Ages 8+</p>
+    </div>
+</section>
+
+<!--section 3-->
+<section class="section__3">
+    <div class="div1">
+        <h1>Pole climbing<br>Activity</h1>
+        <p>Ever wondered how telephone engineers get to the top of the telephone poles? Well, here’s your chance to
+            find out. group size 8. Ages 8+</p>
+    </div>
+    <div class="div2">
+        <img src="Images/Pole climbing.png" alt="Test Image">
+    </div>
+</section>
+
+<!-- Customer Review -->
+<section class="customer-review">
+    <div class="customer-review__container">
+        <img src="Images/kid-review1.png" alt="Customer Image">
+        <p>‘I was really scared about the abseiling but the instructor Mike was really
+            encouraging and helped me do it, thanks Mike. − Sophie, aged 10</p>
+
+    </div>
+</section>
+
+
+<!--section 5-->
+<section class="section__5">
+    <div class="div5">
+        <p class="contact-text">All rope-based activities take place on site with full safety equipment provided.
+            <br> </br>Contact the centre to book the activity of your choice or get directly to us! <a href="https://www.google.com/maps"
+                class="contact-link">Our location</a>
+        </p>
+    </div>
+</section>
+
+</body>
+
+<!-- Footer -->
+<footer>
+    <div class="div1">
+        <p>Lochquarry Outdoor Centre.</p>
+        <p>Contact the centre to book the activity of your choice or get directly to us! <a href="https://www.google.com/maps"
+            class="contact-link">Our location</p>
+    </div>
+</footer>
+
+</html>

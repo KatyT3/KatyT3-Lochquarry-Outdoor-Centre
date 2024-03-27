@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us</title>
+    <style>
+        /* Menu & Logo*/
+        header {
+            position: relative;
+            top: 0;
+            left: 0;
+            width: calc(100% - 6%);
+            background-color: white;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 8px 3%;
+            z-index: 100;
+        }
+
+        .menu {
+            display: flex;
+            align-items: center;
+        }
+
+        .menu ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+        }
+
+        .menu ul li {
+            margin-left: 20px;
+        }
+
+        .menu ul a {
+            text-transform: capitalize;
+            color: black;
+            text-decoration: none;
+            position: relative;
+        }
+
+        .menu ul a::after {
+            position: absolute;
+            left: 0;
+            bottom: -6px;
+            content: "";
+            width: 100%;
+            height: 2px;
+            background-color: #bee5a9;
+            transition: 0.1s ease-out;
+        }
+
+        .logo {
+            width: 20%;
+            margin-top: 0%;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+        .container {
+            max-width: 600px;
+            margin: 50px auto;
+            padding: 80px;
+            background-color: #fff;
+            border-radius: 60px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .container h1 {
+            font-size: 30px;
+        }
+
+        h1 {
+            text-align: center;
+            margin-bottom: 20px;
+            color: #dfaeed;
+        }
+
+        p {
+            margin-bottom: 20px;
+        }
+
+        .staff-member {
+            margin-bottom: 40px;
+        }
+
+        .staff-member h3 {
+            color: #dfaeed;
+            margin-bottom: 10px;
+        }
+
+        .staff-member p {
+            margin-bottom: 5px;
+        }
+
+        /* Footer*/
+        footer {
+            background-color: #A0D689;
+            color: black;
+            margin-top: 20px;
+            padding: 25px 10%;
+        }
+
+        footer p {
+            font-size: 15px;
+        }
+
+        .icons_social {
+            margin: 25px 0;
+        }
+
+        .icons_social i {
+            margin-right: 20px;
+            font-size: 20px;
+        }
+
+        footer img {
+            margin-top: 20px;
+            border: 1px solid #fff;
+            height: 50px;
+            cursor: pointer;
+        }
+
+        footer img:last-child {
+            margin-left: 10px;
+        }
+
+        .banner {
+            position: relative;
+            height: 400px;
+            background-image: url('Images/team.jpg');
+            background-size: cover;
+            background-position: center;
+            display: flex;
+            align-items: center;
+            justify-content: flex-end;
+            color: rgb(108, 121, 219);
+            text-align: center;
+            font-size: 24px;
+            font-weight: bold;
+            padding-right: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Menu -->
+    <header>
+        <div class="menu">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="Land-Based.html">Land</a></li>
+                <li><a href="Water-Based.html">Water</a></li>
+                <li><a href="Rope-Based.html">Rope</a></li>
+                <li><a href="About-Us.html">About Us</a></li>
+                <li><a href="Contact-Us.html">Contact Us</a></li>
+            </ul>
+        </div>
+        <img src="Images/Logo1.png" class="logo" alt="Logo">
+    </header>
+    <!-- Banner -->
+    <div class="banner"></div>
+    <!--About us section-->
+    <div class="container">
+        <h1>ABOUT US</h1>
+        <p>Lochquarry Outdoor Centre is set in acres of land in the heart of the majestic Argyll hills. On our doorstep is
+            not only magnificent scenery, but also a breath-taking selection of outdoor and adventurous activities.</p>
+        <p>With activities designed to meet the needs of all ages and experiences of young people, Lochquarry truly brings
+            adventure to everyone.</p>
+        <p>Each activity is run under the instruction of one of our highly trained staff and all safety equipment is
+            provided.</p>
+
+        <div class="staff-member">
+            <h3>Claire Jack</h3>
+            <p><strong>Position:</strong> Centre Manager</p>
+            <p><strong>Responsible for:</strong> The overall running of the centre and all of its activities</p>
+            <p><strong>Favourite Activity:</strong> Pole climb</p>
+        </div>
+
+        <div class="staff-member">
+            <h3>Robbie Elliot</h3>
+            <p><strong>Position:</strong> Senior Instructor (Land)</p>
+            <p><strong>Responsible for:</strong> Overseeing all of the land based activities</p>
+            <p><strong>Favourite Activity:</strong> Hillwalking in the beautiful Scottish highlands</p>
+        </div>
+
+        <div class="staff-member">
+            <h3>Marion Hunter</h3>
+            <p><strong>Position:</strong> Centre Administrator</p>
+            <p><strong>Responsible for:</strong> Making bookings and arranging activity slots for groups</p>
+            <p><strong>Favourite Activity:</strong> Making sure everyone has a great time when they visit Lochquarry</p>
+        </div>
+
+        <p>Our activities are very popular with youth groups including Scouts and Guides.</p>
+        <p>To book your next adventure at Lochquarry, please phone <strong>01475 229 8311</strong>.</p>
+    </div>
+    <!-- Footer -->
+    <footer>
+        <div class="div1">
+            <p>Lochquarry Outdoor Centre.</p>
+            <p>Contact the centre to book the activity of your choice or get directly to us! <a href="https://www.google.com/maps"
+                    class="contact-link">Our location</a></p>
+        </div>
+    </footer>
+</body>
+
+</html>

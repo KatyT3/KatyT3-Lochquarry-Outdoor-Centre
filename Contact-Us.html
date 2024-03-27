@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <style>
+        /* Menu & Logo */
+        header {
+            position: relative;
+            top: 0;
+            left: 0;
+            width: calc(100% - 6%);
+            background-color: white;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 8px 3%;
+            z-index: 100;
+        }
+
+        .menu {
+            display: flex;
+            align-items: center;
+        }
+
+        .menu ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+        }
+
+        .menu ul li {
+            margin-left: 20px;
+        }
+
+        .menu ul a {
+            text-transform: capitalize;
+            color: black;
+            text-decoration: none;
+            position: relative;
+        }
+
+        .menu ul a::after {
+            position: absolute;
+            left: 0;
+            bottom: -6px;
+            content: "";
+            width: 100%;
+            height: 2px;
+            background-color: #bee5a9;
+            transition: 0.1s ease-out;
+        }
+
+        .logo {
+            width: 20%;
+            margin-top: 0%;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+        .container {
+            max-width: 600px;
+            margin: 50px auto;
+            padding: 80px;
+            background-color: #fff;
+            border-radius: 60px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .container h1 {
+            font-size: 30px;
+        }
+
+        h1 {
+            text-align: center;
+            margin-bottom: 20px;
+            color: #a8c2fc;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 5px;
+        }
+
+        input[type="text"],
+        textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 20px;
+            border: 1px solid #e966a1;
+            border-radius: 5px;
+        }
+
+        input[type="submit"] {
+            background-color: #86e2df;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #eeb685;
+        }
+
+        .map-container {
+            margin-top: 20px;
+        }
+
+        .map-container iframe {
+            width: 100%;
+            height: 300px;
+            border: none;
+        }
+
+        /* Footer */
+        footer {
+            background-color: #a0d689;
+            color: black;
+            margin-top: 20px;
+            padding: 25px 10%;
+        }
+
+        footer p {
+            font-size: 15px;
+        }
+
+        .icons_social {
+            margin: 25px 0;
+        }
+
+        .icons_social i {
+            margin-right: 20px;
+            font-size: 20px;
+        }
+
+        footer img {
+            margin-top: 20px;
+            border: 1px solid #fff;
+            height: 50px;
+            cursor: pointer;
+        }
+
+        footer img:last-child {
+            margin-left: 10px;
+        }
+
+        .banner {
+            position: relative;
+            height: 300px;
+            background-image: url('Images/Banner6.png');
+            background-size: cover;
+            background-position: center;
+            display: flex;
+            align-items: center;
+            justify-content: flex-end;
+            color: rgb(108, 121, 219);
+            text-align: center;
+            font-size: 24px;
+            font-weight: bold;
+            padding-right: 20px;
+        }
+
+        .Paragraph p {
+            text-align: center;
+            font-size: 14px;
+        }
+
+        button {
+            align-items: center;
+        }
+
+        /* Adjustments */
+        .text {
+            display: none;
+            margin-top: 20px;
+            text-align: center;
+            font-size: 16px;
+        }
+
+        .active {
+            display: block;
+        }
+
+        #change {
+            margin-top: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Menu -->
+    <header>
+        <div class="menu">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="Land-Based.html">Land</a></li>
+                <li><a href="Water-Based.html">Water</a></li>
+                <li><a href="Rope-Based.html">Rope</a></li>
+                <li><a href="About-Us.html">About Us</a></li>
+                <li><a href="Contact-Us.html">Contact Us</a></li>
+            </ul>
+        </div>
+        <img src="Images/Logo1.png" class="logo" alt="Logo">
+    </header>
+
+    <!-- Banner -->
+    <div class="banner"></div>
+
+    <!-- Paragraph -->
+    <section class="section1">
+        <div class="Paragraph">
+            <p>Lochquarry Outdoor Centre provides outdoor activities for young people aged 6–18. We have recently
+                expanded
+                the number of different activities that we offer. This website aims to
+                inform visitors about all the exciting activities that young people can take part in
+                at Lochquarry!</p>
+
+            <!--Contact us section-->
+            <div class="container">
+                <h1>CONTACT US</h1>
+                <form action="#" method="post">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
+                    <label for="email">Email:</label>
+                    <input type="text" id="email" name="email" required>
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" rows="5" required></textarea>
+                    <input type="submit" value="Submit">
+                </form>
+                <div class="map-container">
+                    <p>Lochquarry Outdoor Centre, UK - Contact number: 01475 229 8311</p>
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2237.9517205300646!2d-4.822061184029495!3d55.95822818055531!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4888430c38d49c1f%3A0xc3d1dab91b8b3cc0!2sLochquarry%20Outdoor%20Centre!5e0!3m2!1sen!2suk!4v1648300659647!5m2!1sen!2suk"
+                        allowfullscreen></iframe>
+                </div>
+            </div>
+
+            <!-- JavaScript -->
+            <button class="button" id="change">Click me to display Opening times.</button>
+            <p id="text" class="text"><u>Opening times</u><br><br>Monday 0800-1700<br>Tuesday 0800-1700<br>Wednesday
+                0800-1700<br>Thursday 0800-1700<br>Friday 0800-1700<br>Saturday 0800-1700<br>Sunday 0800-1700</p>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="div1">
+            <p>Lochquarry Outdoor Centre.</p>
+            <p>Contact the centre to book the activity of your choice or get directly to us! <a
+                    href="https://www.google.com/maps" class="contact-link">Our location</a></p>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script>
+        const btn = document.getElementById("change");
+        const text = document.getElementById("text");
+        btn.addEventListener("click", function () {
+            text.classList.toggle("active")
+        });
+
+        document.getElementById("change").style.marginLeft = "53%";
+    </script>
+</body>
+
+</html>

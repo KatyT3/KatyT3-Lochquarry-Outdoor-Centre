@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Water-Based Activities</title>
+    <style>
+        /* Menu & Logo*/
+        header {
+            position: relative;
+            top: 0;
+            left: 0;
+            width: calc(100% - 6%);
+            background-color: white;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 8px 3%;
+            z-index: 100;
+        }
+
+        .menu {
+            display: flex;
+            align-items: center;
+        }
+
+        .menu ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+        }
+
+        .menu ul li {
+            margin-left: 20px;
+        }
+
+        .menu ul a {
+            text-transform: capitalize;
+            color: black;
+            text-decoration: none;
+            position: relative;
+        }
+
+        .menu ul a::after {
+            position: absolute;
+            left: 0;
+            bottom: -6px;
+            content: "";
+            width: 100%;
+            height: 2px;
+            background-color: #bee5a9;
+            transition: 0.1s ease-out;
+        }
+
+        .logo {
+            width: 20%;
+            margin-top: 0%;
+        }
+
+        /* BODY */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+        .banner {
+            position: relative;
+            height: 500px;
+            background-image: url('Images/Banner.png');
+            background-size: cover;
+            background-position: center;
+            display: flex;
+            align-items: center;
+            justify-content: flex-end;
+
+            color: rgb(108, 121, 219);
+            text-align: center;
+            font-size: 24px;
+            font-weight: bold;
+            padding-right: 20px;
+
+        }
+
+        .section {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 10px;
+            margin-top: 20px;
+        }
+
+        .testimonial-container {
+            flex: 1;
+        }
+
+        .testimonial {
+            background-color: #f7adad;
+            padding: 20px;
+            border-radius: 10px;
+            text-align: center;
+        }
+
+        .testimonial img {
+            width: 200px;
+            border-radius: 50%;
+            margin-bottom: 15px;
+        }
+
+        .testimonial-text {
+            margin-top: 10px;
+        }
+
+        .testimonial-text h3 {
+            font-size: 16px;
+        }
+
+        .testimonial p {
+            font-size: 14px;
+        }
+
+        /* Sticky announcement bar */
+        .announcement-bar {
+            position: relative;
+            top: 0;
+            width: 100%;
+            background-color: #c1eefd;
+            color: rgb(0, 0, 0);
+            padding: 10px 0;
+            text-align: center;
+            z-index: 999;
+        }
+
+        .announcement-bar h3 {
+            font-size: 14px;
+        }
+
+        /* Footer */
+        footer {
+            background-color: #A0D689;
+            color: black;
+            margin-top: 20px;
+            padding: 25px 10%;
+        }
+
+        footer p {
+            font-size: 15px;
+        }
+
+        .icons_social {
+            margin: 25px 0;
+        }
+
+        .icons_social i {
+            margin-right: 20px;
+            font-size: 20px;
+        }
+
+        footer img {
+            margin-top: 20px;
+            border: 1px solid #fff;
+            height: 50px;
+            cursor: pointer;
+        }
+
+        footer img:last-child {
+            margin-left: 10px;
+        }
+
+        .Paragraph p {
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Announcement bar -->
+    <div class="announcement-bar">
+        <h3>ACTIVITIES DESIGNED FOR THE ADVENTURERS WITH BOUNDLESS ENERGY</h3>
+    </div>
+
+    <!-- Menu -->
+    <header>
+        <div class="menu">
+            <ul>
+                <li><a href="Land-Based.html">Land</a></li>
+                <li><a href="Water-Based.html">Water</a></li>
+                <li><a href="Rope-Based.html">Rope</a></li>
+                <li><a href="About-Us.html">About Us</a></li>
+                <li><a href="Contact-Us.html">Contact Us</a></li>
+            </ul>
+        </div>
+        <img src="Images/Logo1.png" class="logo" alt="Logo">
+    </header>
+
+    <!-- Banner -->
+    <div class="banner">
+    </div>
+
+    <!-- Paragraph -->
+    <section class="section1">
+        <div class="Paragraph">
+            <p>Lochquarry Outdoor Centre provides outdoor activities for young people aged 6 to 18. We have recently expanded
+                the number of different activities that we offer. Get to know more about our exciting activities!</p>
+        </div>
+
+        <!-- Testimonial -->
+        <section class="section">
+            <div class="testimonial-container">
+                <div class="testimonial">
+                    <img src="Images/review1.png" alt="Additional Image 1">
+                    <h3>Joe, aged 9</h3>
+                    <p>‘Five stars, it was great’</p>
+                </div>
+            </div>
+
+            <div class="testimonial-container">
+                <div class="testimonial">
+                    <img src="Images/review3.png" alt="Additional Image 2">
+                    <h3>Kelly's mum</h3>
+                    <p>‘I would definitely come back’</p>
+                </div>
+            </div>
+        </section>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="div1">
+            <p>Lochquarry Outdoor Centre.</p>
+        </div>
+    </footer>
+
+</body>
+
+</html>
